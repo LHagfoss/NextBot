@@ -30,13 +30,6 @@ NextBot is an all-purpose Discord bot with a modern web dashboard, built with Ne
   - Docker Containerization
   - Discord.js Integration
 
-## Prerequisites
-
-- [Bun](https://bun.sh) >= 1.0.0
-- [Node.js](https://nodejs.org) >= 18.0.0
-- [PostgreSQL](https://postgresql.org) >= 16.0
-- [Docker](https://docker.com) (optional)
-
 ## License
 
 [MIT License](LICENSE)
