@@ -1,0 +1,12 @@
+FROM oven/bun:1
+WORKDIR /app
+
+COPY package.json bun.lockb ./
+COPY prisma ./prisma/
+
+RUN bun install
+RUN bunx prisma generate
+
+COPY . .
+
+CMD ["/bin/sh", "-c", "bunx prisma db push && bun run bot"] 

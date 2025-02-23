@@ -1,0 +1,31 @@
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Backup {
+  id        String   @id @default(uuid())
+  guildId   String
+  name      String
+  data      Json
+  createdAt DateTime @default(now())
+}
+
+model Command {
+  id          String   @id @default(cuid())
+  guildId     String
+  name        String
+  description String
+  response    String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@unique([guildId, name])
+  @@index([guildId])
+} 
