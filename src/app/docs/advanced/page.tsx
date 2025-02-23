@@ -80,4 +80,4 @@ export default function AdvancedPage() {
       </div>
     </div>
   );
-} 
+}

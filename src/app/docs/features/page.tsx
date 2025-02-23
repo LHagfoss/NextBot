@@ -1,3 +1,18 @@
+const features = [
+  {
+    title: "Server Backup",
+    icon: "🔒",
+    description: "Complete server backup solution including channels, roles, and settings",
+    benefits: [
+      "Automated daily backups",
+      "One-click restore",
+      "Multiple backup slots",
+      "Selective restoration"
+    ]
+  },
+  // ... (other features)
+];
+
 export default function FeaturesPage() {
   return (
     <div className="prose prose-invert max-w-none">
