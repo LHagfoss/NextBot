@@ -1,3 +1,18 @@
+const features = [
+  {
+    title: "Server Backup",
+    icon: "🔒",
+    description: "Complete server backup solution including channels, roles, and settings",
+    benefits: [
+      "Automated daily backups",
+      "One-click restore",
+      "Multiple backup slots",
+      "Selective restoration"
+    ]
+  },
+  // ... (other features)
+];
+
 export default function FeaturesPage() {
   return (
     <div className="prose prose-invert max-w-none">
@@ -5,7 +20,7 @@ export default function FeaturesPage() {
 
       <div className="mb-8">
         <p className="text-xl text-zinc-300">
-          Explore NextBot's powerful features designed to enhance your Discord server management.
+          Explore NextBot&apos;s powerful features designed to enhance your Discord server management.
         </p>
       </div>
 
@@ -14,7 +29,7 @@ export default function FeaturesPage() {
           <h2 className="text-2xl font-bold mb-6">Server Backup System</h2>
           <div className="bg-zinc-900/50 border border-zinc-800 rounded-lg p-6">
             <p className="text-zinc-300 mb-4">
-              Our advanced backup system ensures your server's safety by storing:
+              Our advanced backup system ensures your server&apos;s safety by storing:
             </p>
             <ul className="list-disc pl-4 text-zinc-300 mb-4">
               <li>Channel structures and permissions</li>
@@ -66,7 +81,7 @@ export default function FeaturesPage() {
           <h2 className="text-2xl font-bold mb-6">Welcome System</h2>
           <div className="bg-zinc-900/50 border border-zinc-800 rounded-lg p-6">
             <p className="text-zinc-300 mb-4">
-              Customize your server's welcome experience:
+              Customize your server&apos;s welcome experience:
             </p>
             <ul className="list-disc pl-4 text-zinc-300 mb-4">
               <li>Custom welcome messages</li>

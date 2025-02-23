@@ -80,7 +80,7 @@ export default function FeaturesPage() {
               Powerful Features for Your Discord Server
             </h1>
             <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
-              Transform your Discord server with NextBot's comprehensive suite of features
+              Transform your Discord server with NextBot&apos;s comprehensive suite of features
               designed to enhance moderation, engagement, and automation.
             </p>
           </div>
