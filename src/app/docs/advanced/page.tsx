@@ -14,10 +14,10 @@ export default function AdvancedPage() {
               <h4 className="font-semibold text-white mb-2">Example Custom Command:</h4>
               <pre className="bg-zinc-900 p-4 rounded-lg">
                 <code>
-                  /custom create welcome-vip{'\n'}
-                  Content: Welcome {user} to the VIP section!{'\n'}
-                  Role: @VIP{'\n'}
-                  Channel: #vip-lounge
+                  {`/custom create welcome-vip
+                  Content: Welcome {user} to the VIP section!
+                  Role: @VIP
+                  Channel: #vip-lounge`}
                 </code>
               </pre>
             </div>
@@ -40,7 +40,7 @@ export default function AdvancedPage() {
             <div className="mb-4">
               <h4 className="font-semibold text-white mb-2">Generate API Key:</h4>
               <pre className="bg-zinc-900 p-4 rounded-lg">
-                <code>/api generate-key</code>
+                <code>{`/api generate-key`}</code>
               </pre>
             </div>
             <p className="text-zinc-300">Available Endpoints:</p>
@@ -63,15 +63,15 @@ export default function AdvancedPage() {
               <h4 className="font-semibold text-white mb-2">Example Workflow:</h4>
               <pre className="bg-zinc-900 p-4 rounded-lg">
                 <code>
-                  /automation create{'\n'}
-                  Trigger: Member joins{'\n'}
-                  Conditions:{'\n'}
-                  - Account age > 30 days{'\n'}
-                  - Has specific role{'\n'}
-                  Actions:{'\n'}
-                  - Assign role{'\n'}
-                  - Send welcome message{'\n'}
-                  - Add to database
+                  {`/automation create
+                  Trigger: Member joins
+                  Conditions:
+                  - Account age &gt; 30 days
+                  - Has specific role
+                  Actions:
+                  - Assign role
+                  - Send welcome message
+                  - Add to database`}
                 </code>
               </pre>
             </div>
