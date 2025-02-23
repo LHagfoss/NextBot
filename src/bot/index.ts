@@ -32,6 +32,14 @@ for (const command of commands) {
 client.once(Events.ClientReady, (c) => {
   console.log(`Logged in as ${c.user.tag}`);
   console.log('Registered commands:', Array.from(client.commands.keys()));
+  
+  client.user?.setPresence({
+    activities: [{ 
+      name: '🔗 discord.gg/nextbot',
+      type: 4
+    }],
+    status: 'dnd'
+  });
 });
 
 client.on(Events.InteractionCreate, async (interaction) => {

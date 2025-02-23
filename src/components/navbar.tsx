@@ -45,8 +45,8 @@ export default function Navbar() {
               >
                 Dashboard
               </Link>
-              <Link href="#features" className="hover:text-zinc-50 transition-colors">Features</Link>
-              <Link href="#docs" className="hover:text-zinc-50 transition-colors">Documentation</Link>
+              <Link href="/features" className="hover:text-zinc-50 transition-colors">Features</Link>
+              <Link href="/docs" className="hover:text-zinc-50 transition-colors">Documentation</Link>
             </div>
     
             <div className="flex-1 flex justify-end items-center gap-4">
