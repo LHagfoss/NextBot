@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <main className="relative w-screen min-h-screen text-white overflow-hidden inset-0">
+      <main className="relative w-full min-h-screen text-white overflow-hidden inset-0">
       <div className="absolute -top-24 -left-28 -z-10 w-96 h-96 bg-indigo-600/30 rounded-full blur-[128px]" />
       <div className="absolute top-[200px] -right-52 -z-10 w-[40rem] h-[40rem] bg-purple-600/30 rounded-full blur-[128px]" />
         <div className="absolute top-1/3 right-[50%] translate-x-[-50%] -z-10 w-96 h-96 bg-indigo-600/30 rounded-full blur-[128px]" />
